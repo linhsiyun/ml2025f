@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的 HW02 是在 Colab 上利用 MONAI 的 3D U-Net 訓練心臟肌肉分割模型。雖然一開始在環境設定與資料下載上花了不少時間，但在摸索的過程中逐漸理解了機器學習從資料前處理、模型建立到訓練與輸出的整體流程。Colab 偶爾會因為 OOM 或閒置過久而斷線，導致需要重新執行，不過反覆操作也讓我更加熟悉各種設定與訓練細節。這次作業讓我首次深入使用 MONAI，發現裡面有許多專為醫療影像設計的工具與可客製化的模型框架，能讓影像標註與訓練流程變得更方便。最後成功訓練出一顆完整的心臟模型時，真的感到相當有成就感，也讓我對醫療影像 AI 的應用有更清楚的認識。
     </div>
   </div>
 
@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,16 +196,22 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <!-- <iframe width="100%" height="560" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+      
+      <table>
+        <tr>
+          <td> Simple Baseline Dice分數圖片
+          <img src="Simple baseline.png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> Medium Baseline Dice分數圖片
+          <img src="Medium baseline.png" width="100%" height="560">
+        </tr>
+      </table>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
-
-  <!-- ------------------------------------------------>
-
 
 <script>
   $(function() {
@@ -252,3 +258,4 @@
 
 </body>
 </html>
+
